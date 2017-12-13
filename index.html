@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+
+
+
+	<!-- Firebase CDN -->
+	<script src='https://cdn.firebase.com/js/client/2.4.1/firebase.js'></script>
+
+
+</head>
+<body>
+
+<header>
+	<div id="barrowomen"></div>
+
+		<div id="logoimage"></div>
+		<h1>La Morada</h1>
+		<div id="mercadobag"></div>
+		<div id="CountMeal">	<span>MEALS</span> </div>
+</header>
+
+			</div>
+
+
+
+
+<!-- /******************************************
+/* quesadillas
+/*******************************************/ -->
+
+<section class="completesection">
+
+	<section class="headline">
+		<h2 id="quesadillaHeadline">Quesadillas</h2>
+		<button id="subtract" type="submit">-</button>
+		<div id=quantity contentEditable=true data-text="1"></div>
+		<button id="add" type="submit">+</button>
+	</section>
+
+	<form class="quesadillaMenu">
+		<div id="order1">
+
+			<h3>Please Select Tortilla Type:</h3>
+			<label for="tortilla">Flour</label>
+			<input class="tortilla-flour" type="radio" name= "quesadillaOrder"></input>
+			<label for="tortilla">Corn</label>
+			<input class="tortilla-corn" type="radio" name= "quesadillaOrder"></input>
+			<h3>Please Select Protein:</h3>
+			<label for="steak">Bistec Steak</label>
+			<input class="steak" type="checkbox" name="meatOrder"></input>
+
+			<label for="pork">Carnitas Pork</label>
+			<input class="pork" type="checkbox" name="meatOrder"></input>
+
+			<label for="enchilada">Echilada Pork</label>
+			<input class="enchilada" type="checkbox" name="meatOrder"></input>
+
+			<label for="chorizo">Chorizo Sausage</label>
+			<input class="chorizo" type="checkbox" name="meatOrder"></input>
+
+			<label for="vegetables">Grill Veggies</label>
+			<input class="vegetables" type="checkbox" name="meatOrder"></input>
+
+			<label for="hongos">Hongos Mushrooms</label>
+			<input class="hongos" type="checkbox" name="meatOrder"></input> -->
+			<!--followind inputs uses three lines in users view  -->
+			 <label for="cecina">Cecina Skirt Steak</label>
+			<input class="cecina" type="checkbox" name="meatOrder"></input>
+
+			<label for="chicken">Pollo Chicken Asado</label>
+			<input class="chicken" type="checkbox" name="meatOrder"></input>
+
+			<label for="alpastor">Al Pastor Pork</label>
+			<input class="alpastor" type="checkbox" name="meatOrder"></input>
+
+		</div>
+
+		<span id=totalPrice>Total=  $</span>
+		<span id="calculatedPrice"></span>
+		<input id="submit" type="Submit" value="Submit">
+	</form>
+</section>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+
+</body>
+</html>
